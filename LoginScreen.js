@@ -55,9 +55,9 @@ const styles = StyleSheet.create({
     backgroundColor: "rgba(0,0,0,0.4)",
   },
   title: {
-    fontSize: 36,
+    fontSize: 45,
     fontWeight: "bold",
-    color: "#ffa500",
+    color: "#ffa520",
     marginBottom: 30,
   },
   input: {
@@ -71,7 +71,7 @@ const styles = StyleSheet.create({
     color: "#333",
   },
   button: {
-    backgroundColor: "#32cd32",
+    backgroundColor: "#ffa520",
     width: "80%",
     padding: 10,
     borderRadius: 5,
