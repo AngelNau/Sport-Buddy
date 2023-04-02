@@ -5,7 +5,7 @@
       "name": "John",
       "surname": "Doe",
       "county": "USA",
-      "rate": 4,
+      "rate": 4.5,
       "sport": "Basketball",
       "vreme": 85
     },
@@ -14,7 +14,7 @@
       "name": "Jane",
       "surname": "Doe",
       "county": "USA",
-      "rate": 3,
+      "rate": 3.7,
       "sport": "Basketball",
       "vreme": 150
     },
@@ -23,7 +23,7 @@
       "name": "Bob",
       "surname": "Smith",
       "county": "USA",
-      "rate": 2,
+      "rate": 2.4,
       "sport": "Basketball",
       "vreme": 40
     },
@@ -41,7 +41,7 @@
       "name": "James",
       "surname": "Williams",
       "county": "Canada",
-      "rate": 4,
+      "rate": 4.3,
       "sport": "Basketball",
       "vreme": 100
     },
@@ -59,7 +59,7 @@
       "name": "Michael",
       "surname": "Garcia",
       "county": "Mexico",
-      "rate": 2,
+      "rate": 2.8,
       "sport": "Basketball",
       "vreme": 60
     },
@@ -77,7 +77,7 @@
       "name": "William",
       "surname": "Lopez",
       "county": "Mexico",
-      "rate": 3,
+      "rate": 3.3,
       "sport": "Basketball",
       "vreme": 105
     },
@@ -86,7 +86,7 @@
       "name": "Isabella",
       "surname": "Gonzalez",
       "county": "Spain",
-      "rate": 4,
+      "rate": 4.1,
       "sport": "Basketball",
       "vreme": 135
     },
@@ -95,7 +95,7 @@
       "name": "Ethan",
       "surname": "Rodriguez",
       "county": "Spain",
-      "rate": 3,
+      "rate": 3.2,
       "sport": "Basketball",
       "vreme": 95
     },
@@ -104,7 +104,7 @@
       "name": "Mia",
       "surname": "Perez",
       "county": "Spain",
-      "rate": 2,
+      "rate": 2.3,
       "sport": "Basketball",
       "vreme": 50
     },
@@ -119,21 +119,21 @@
     },
     {
       "id": 14,
-      "Name": "Mason",
-      "Surname": "Miller",
-      "Country": "Canada",
-      "Rate": 3,
-      "Sports": ["Basketball"],
-      "Vreme": 80
+      "name": "Mason",
+      "surname": "Miller",
+      "country": "Canada",
+      "rate": 3.5,
+      "sports": ["Basketball"],
+      "vreme": 80
     },
     {
       "id": 15,
-      "Name": "Ethan",
-      "Surname": "Garcia",
-      "Country": "Australia",
-      "Rate": 5,
-      "Sports": ["Basketball"],
-      "Vreme": 90
+      "name": "Ethan",
+      "surname": "Garcia",
+      "country": "Australia",
+      "rate": 5,
+      "sports": ["Basketball"],
+      "vreme": 90
     }
   ]
 }
