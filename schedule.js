@@ -1,5 +1,5 @@
+import { StatusBar } from "expo-status-bar";
 import React from "react";
-import { useNavigation } from "@react-navigation/native";
 import {
   View,
   Text,
@@ -9,40 +9,36 @@ import {
   ImageBackground,
 } from "react-native";
 
-const LoginScreen = () => {
-  const navigation = useNavigation();
-
+const startGame = () => {
   return (
     <ImageBackground
       source={require("./backgroundImage.jpg")}
       style={styles.backgroundImage}
     >
       <View style={styles.container}>
-        <Text style={styles.title}>SPORT BUDDY</Text>
+        <Text style={styles.title}>SCHEDULE GAME</Text>
         <TextInput
           style={styles.input}
-          placeholder="Username"
-          placeholderTextColor="#aaa"
+          placeholder="Region"
+          placeholderTextColor="#ffa520"
         />
         <TextInput
           style={styles.input}
-          placeholder="Password"
-          placeholderTextColor="#aaa"
-          secureTextEntry
+          placeholder="Date"
+          placeholderTextColor="#ffa520"
+        />
+        <TextInput
+          style={styles.input}
+          placeholder="Time"
+          placeholderTextColor="#ffa520"
+        />
+        <TextInput
+          style={styles.input}
+          placeholder="Place"
+          placeholderTextColor="#ffa520"
         />
         <TouchableOpacity style={styles.button}>
-          <Text style={styles.buttonText}>Log In</Text>
-        </TouchableOpacity>
-        <View style={styles.separator}>
-          <View style={styles.line} />
-          <Text style={styles.text}>or</Text>
-          <View style={styles.line} />
-        </View>
-        <TouchableOpacity
-          style={styles.button}
-          onPress={() => navigation.navigate("SignupScreen")}
-        >
-          <Text style={styles.buttonText}>Sign Up</Text>
+          <Text style={styles.buttonText}>Schedule Game</Text>
         </TouchableOpacity>
       </View>
     </ImageBackground>
@@ -53,15 +49,31 @@ const styles = StyleSheet.create({
   backgroundImage: {
     flex: 1,
     resizeMode: "cover",
+    justifyContent: "center",
   },
   container: {
     flex: 1,
     justifyContent: "center",
     alignItems: "center",
-    backgroundColor: "rgba(0,0,0,0.4)",
+    backgroundColor: "rgba(0,0,0,0.5)", // add opacity to the background image
+  },
+  separator: {
+    flexDirection: "row",
+    alignItems: "center",
+    marginVertical: 20,
+  },
+  text: {
+    marginHorizontal: 10,
+    color: "#8dd6a1",
+    marginHorizontal: 5,
+  },
+  line: {
+    flex: 1,
+    height: 1,
+    backgroundColor: "#8dd6a1",
   },
   title: {
-    fontSize: 45,
+    fontSize: 36,
     fontWeight: "bold",
     color: "#ffa520",
     marginBottom: 30,
@@ -72,7 +84,7 @@ const styles = StyleSheet.create({
     marginVertical: 10,
     padding: 10,
     borderWidth: 1,
-    borderColor: "#ccc",
+    borderColor: "#ffa520",
     borderRadius: 5,
     color: "#333",
   },
@@ -88,20 +100,6 @@ const styles = StyleSheet.create({
     textAlign: "center",
     fontWeight: "bold",
   },
-  separator: {
-    flexDirection: "row",
-    alignItems: "center",
-    marginVertical: 20,
-  },
-  line: {
-    flex: 1,
-    height: 1,
-    backgroundColor: "#ccc",
-  },
-  text: {
-    marginHorizontal: 10,
-    color: "#aaa",
-  },
 });
 
-export default LoginScreen;
+export default startGame;
