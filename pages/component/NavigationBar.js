@@ -12,23 +12,23 @@ const NavigationBar = () => {
       <View style={styles.row}>
         {/* <View style={styles.tab} /> */}
         <TouchableOpacity onPress={() => navigation.navigate('Profile')}>
-          <Icon name="emoji-events" size={40} style={{ color: "#f5c211", }} />
+          <Icon name="emoji-events" size={40} style={{ color: "#ffa520", }} />
         </TouchableOpacity>
         <View style={styles.separator} />
         <TouchableOpacity onPress={() => navigation.navigate('Profile')}>
-        <Icon name="map" size={40} style={{ color: "#f5c211", }} />
+          <Icon name="map" size={40} style={{ color: "#ffa520", }} />
         </TouchableOpacity>
         <View style={styles.separator} />
         <TouchableOpacity onPress={() => navigation.navigate('Profile')}>
-        <Icon name="book" size={40} style={{ color: "#f5c211", }} />
+          <Icon name="book" size={40} style={{ color: "#ffa520", }} />
         </TouchableOpacity>
         <View style={styles.separator} />
         <TouchableOpacity onPress={() => navigation.navigate('Profile')}>
-        <Icon name="sports-basketball" size={30} color="#f5c211" />
+          <Icon name="sports-basketball" size={40} color="#ffa520" />
         </TouchableOpacity>
         <View style={styles.separator} />
         <TouchableOpacity onPress={() => navigation.navigate('Profile')}>
-        <Icon name="person" size={40} style={{ color: "#f5c211", }} />
+          <Icon name="person" size={40} style={{ color: "#ffa520", }} />
         </TouchableOpacity>
       </View>
     </View>
