@@ -13,12 +13,11 @@ export default function App() {
     <NavigationContainer>
       <Stack.Navigator initialRouteName='Home'>
         <Stack.Screen name="Home">
-          {(props) => <Home {...props} channelName={"Brudda"}/>}
+          {(props) => <Home {...props} channelName={"Brudda"} />}
         </Stack.Screen>
 
         {/* profile */}
-        <Stack.Screen name="Profile" component=
-        {Profile} />
+        <Stack.Screen name="Profile" component={Profile} />
       </Stack.Navigator>
     </NavigationContainer>
     // <View style={styles.container}>
@@ -28,11 +27,11 @@ export default function App() {
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+// const styles = StyleSheet.create({
+//   container: {
+//     flex: 1,
+//     backgroundColor: '#fff',
+//     alignItems: 'center',
+//     justifyContent: 'center',
+//   },
+// });
