@@ -8,15 +8,17 @@ import {
   StyleSheet,
   ImageBackground,
 } from "react-native";
+import { useNavigation } from "@react-navigation/native"
 
 const SignupScreen = () => {
+  const navigation = useNavigation();
   return (
     <ImageBackground
       source={require("./backgroundImage.jpg")}
       style={styles.backgroundImage}
     >
       <View style={styles.container}>
-        <Text style={styles.title}>SIGN UP</Text>
+        {/* <Text style={styles.title}>SIGN UP</Text> */}
         <TextInput
           style={styles.input}
           placeholder="Name"
@@ -63,7 +65,7 @@ const SignupScreen = () => {
           placeholderTextColor="#ffa520"
           secureTextEntry
         />
-        <TouchableOpacity style={styles.button}>
+        <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('Schedule')}>
           <Text style={styles.buttonText}>Sign Up</Text>
         </TouchableOpacity>
       </View>
@@ -113,6 +115,7 @@ const styles = StyleSheet.create({
     borderColor: "#ffa520",
     borderRadius: 5,
     color: "#333",
+    backgroundColor: "#ffe795"
   },
   button: {
     backgroundColor: "#ffa520",

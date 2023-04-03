@@ -8,15 +8,17 @@ import {
   StyleSheet,
   ImageBackground,
 } from "react-native";
+import NavigationBar from "./component/NavigationBar";
+import { useNavigation } from "@react-navigation/native"
 
-const startGame = () => {
+const StartGame = () => {
   return (
     <ImageBackground
       source={require("./backgroundImage.jpg")}
       style={styles.backgroundImage}
     >
       <View style={styles.container}>
-        <Text style={styles.title}>SCHEDULE GAME</Text>
+        <Text style={styles.title}>ENTER DETAILS</Text>
         <TextInput
           style={styles.input}
           placeholder="Region"
@@ -37,9 +39,10 @@ const startGame = () => {
           placeholder="Place"
           placeholderTextColor="#ffa520"
         />
-        <TouchableOpacity style={styles.button}>
+        <TouchableOpacity style={styles.button} onPress={() => {alert("TODO")}}>
           <Text style={styles.buttonText}>Schedule Game</Text>
         </TouchableOpacity>
+        <NavigationBar />
       </View>
     </ImageBackground>
   );
@@ -87,6 +90,7 @@ const styles = StyleSheet.create({
     borderColor: "#ffa520",
     borderRadius: 5,
     color: "#333",
+    backgroundColor: "#ffe795"
   },
   button: {
     backgroundColor: "#ffa520",
@@ -102,4 +106,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default startGame;
+export default StartGame;

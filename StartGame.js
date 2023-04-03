@@ -8,6 +8,7 @@ import {
   ImageBackground,
   ScrollView,
 } from "react-native";
+import NavigationBar from "./component/NavigationBar";
 
 const AddPlayerScreen = () => {
   const [team1Players, setTeam1Players] = useState([]);
@@ -49,7 +50,7 @@ const AddPlayerScreen = () => {
                 value={playerName1}
                 onChangeText={setPlayerName1}
                 placeholder="Player name"
-                placeholderTextColor="#ccc"
+                placeholderTextColor="#d10000"
               />
               <TouchableOpacity
                 style={[styles.addButton, { backgroundColor: "green" }]}
@@ -75,7 +76,7 @@ const AddPlayerScreen = () => {
                 value={playerName2}
                 onChangeText={setPlayerName2}
                 placeholder="Player name"
-                placeholderTextColor="#ccc"
+                placeholderTextColor="#d10000"
               />
               <TouchableOpacity
                 style={[styles.addButton, { backgroundColor: "green" }]}
@@ -85,11 +86,13 @@ const AddPlayerScreen = () => {
               </TouchableOpacity>
             </View>
           </View>
-          <TouchableOpacity style={styles.startButton}>
+          <TouchableOpacity style={styles.startButton} onPress={() => alert("Coming Soon")}> 
+          {/* TODO: Add screen with court and players inputted */}
             <Text style={styles.startButtonText}>Start a game</Text>
           </TouchableOpacity>
         </ScrollView>
       </ImageBackground>
+      <NavigationBar />
     </View>
   );
 };
@@ -148,6 +151,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 20,
     marginRight: 10,
     backgroundColor: "#fff",
+    backgroundColor: "#ffe795"
   },
   addButton: {
     width: 50,

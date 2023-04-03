@@ -30,7 +30,7 @@ const LoginScreen = () => {
           placeholderTextColor="#aaa"
           secureTextEntry
         />
-        <TouchableOpacity style={styles.button}>
+        <TouchableOpacity style={styles.button} onPress={() => navigation.navigate("Schedule")}>
           <Text style={styles.buttonText}>Log In</Text>
         </TouchableOpacity>
         <View style={styles.separator}>
@@ -40,7 +40,7 @@ const LoginScreen = () => {
         </View>
         <TouchableOpacity
           style={styles.button}
-          onPress={() => navigation.navigate("SignupScreen")}
+          onPress={() => navigation.navigate("Sign Up")}
         >
           <Text style={styles.buttonText}>Sign Up</Text>
         </TouchableOpacity>
